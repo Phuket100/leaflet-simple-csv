@@ -57,7 +57,7 @@ L.GeoCSV = L.GeoJSON.extend({
       for (var i=0; i<titulos.length; i++) {
          var prop = titulos[i].toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'_');
          if (prop == '' || prop == '_' || this._propertiesNames.indexOf(prop) >= 0) prop = 'prop-'+i;
-         this._propertiesNames[i] = prop + prop;
+         this._propertiesNames[i] = prop;
       }
       //convertimos los datos a geoJSON
       data = this._csv2json(data);
