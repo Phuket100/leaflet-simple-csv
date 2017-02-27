@@ -75,7 +75,7 @@ L.GeoCSV = L.GeoJSON.extend({
   getPropertyTitle: function (prop) {
     var pos = this._propertiesNames.indexOf(prop)
       , title = '';
-#    if (pos >= 0) title = this.options.titles[pos];
+*    if (pos >= 0) title = this.options.titles[pos];
     return title;
   },
 
