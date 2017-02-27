@@ -69,7 +69,6 @@ L.GeoCSV = L.GeoJSON.extend({
     var pos = this.options.titles.indexOf(title)
       , prop = '';
     if (pos >= 0) prop = this._propertiesNames[pos];
-    if (prop = "label") prop = "施設名";
     return prop;
   },
 
@@ -77,6 +76,7 @@ L.GeoCSV = L.GeoJSON.extend({
     var pos = this._propertiesNames.indexOf(prop)
       , title = '';
     if (pos >= 0) title = this.options.titles[pos];
+    if (title = "label") title = "施設名";
     return title;
   },
 
