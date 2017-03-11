@@ -1,5 +1,5 @@
 var dataUrl = 'data/data.csv';
-var maxZoom = 30;
+var maxZoom = 40;
 var fieldSeparator = ',';
 var baseUrl = "http://j.tile.openstreetmap.jp/{z}/{x}/{y}.png";
 var baseAttribution = 'Map data &copy; OpenStreetMap contributors, Tiles Courtesy of OpenStreetMap Japan';
